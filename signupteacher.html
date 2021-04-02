@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--offline bootstrap css-->
+		<link rel="stylesheet" href="bootstrap css/bootstrap.min.css">
+		<!--user defined css-->
+		<link rel="stylesheet" type="text/css" href="userdefined css/style.css">
+		<!--offline defined jquery-->
+		<script type="text/javascript" src="bootstrap js/jquery.js" ></script>
+		<!--offline bootstrap js-->
+		<script type="text/javascript" src="bootstrap js/bootstrap.min.js"></script>
+		<!--user defined js-->
+		<script type="text/javascript" src="userdefined js/event.js"></script>
+		<title>teacher registration</title>
+	</head>
+	<body>
+		<div class="formbody d-flex justify-content-center">
+			<form class="textlayout signupteacherwidth jumbotron" action="#" name="myform" method="post" style="">
+				<h2 class="text-center">Registration Here !!!</h2>
+				<div class="row sizereduceform">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="firstname">First Name
+								<span class="startstyle">*</span>
+							</label>
+							<input type="text" name="fname" class="form-control form-control-lg" placeholder="Your answer">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="middlename">Middle Name
+								<span class="startstyle">*</span>
+							</label>
+							<input type="text" name="mname" class="form-control form-control-lg" placeholder="Your answer">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="lastname">Last Name
+								<span class="startstyle">*</span>
+							</label>
+							<input type="text" name="lname" class="form-control form-control-lg" placeholder="Your answer">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="number1">Mobile Number
+								<span class="startstyle">*</span>
+							</label>
+							<input type="text" name="mobileno" class="form-control form-control-lg" placeholder="Your answer">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="number2">Alternate Mobile Number</label>
+							<input type="text" name="" class="form-control form-control-lg" placeholder="Optional">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="email">Email Address
+								<span class="startstyle">*</span>
+							</label>
+							<input type="email" class="form-control" name="email" id="email" placeholder="Your answer">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="password">Password
+								<span class="startstyle">*</span>
+							</label>
+							<input type="password" name="password" class="form-control form-control-lg" placeholder="Your answer">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="confirmpassword">Confirm Password
+								<span class="startstyle">*</span>
+							</label>
+							<input type="password" name="cpassword" class="form-control form-control-lg"placeholder="Your answer">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<label for="gender">Gender
+							<span class="startstyle">*</span>
+						</label><br>
+						<div class="form-check-inline">
+							<label class="form-check-label">
+								<input type="radio" class="form-check-input" id="male" name="gender" value="0" required>Male
+							</label>
+						</div>
+						<div class="form-check-inline">
+							<label class="form-check-label">
+								<input type="radio" class="form-check-input" id="female" name="gender" value="1">Female
+							</label>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="dob">Enter your DOB
+								<span class="startstyle">*</span>
+							</label>
+							<input type="text" name="txtDate" class="form-control form-control-lg" placeholder="DD/MM/YYYY" id="txtDate">
+							<span class="error" id="lblError"></span>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="select">Course
+								<span class="startstyle">*</span>
+							</label>
+							<select class="form-control" id="select">
+								<option value="">Select</option>
+								<option value="">MCA</option>
+								<option value="">MCS</option>
+								<option value="">IMCA</option>
+								<option value="">Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label><strong>Upload Files</strong></label>
+							<div class="custom-file">
+								<input type="file" name="files[]" multiple class="custom-file-input" id="customFile">
+								<label class="custom-file-label" for="customFile">Choose file</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3">
+						
+					</div>
+					<div class="col-lg-3">
+						<div class="form-group">
+							<a href="login.html">
+								<button type="button" class="btn btn-primary btn-sm buttonback btn mt-3 btn-block rounded-pill text-uppercase tab">Back</button>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						
+					</div>
+					<div class="col-lg-3">
+						<div class="form-group">
+							<a href="#">
+								<button type="submit" class="btn btn-primary btn-sm buttonsubmit btn mt-3 btn-block rounded-pill text-uppercase tab" onclick="return validateForm()">Register</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

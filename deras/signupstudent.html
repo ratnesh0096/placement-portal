@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--offline bootstrap css-->
+		<link rel="stylesheet" href="bootstrap css/bootstrap.min.css">
+		<!--user defined css-->
+		<link rel="stylesheet" type="text/css" href="userdefined css/style.css">
+		<!--offline defined jquery-->
+		<script type="text/javascript" src="bootstrap js/jquery.js" ></script>
+		<!--offline bootstrap js-->
+		<script type="text/javascript" src="bootstrap js/bootstrap.min.js"></script>
+		<!--user defined js-->
+		<script type="text/javascript" src="userdefined js/event.js"></script>
+		<title>student registration</title>
+	</head>
+	<body>
+		<div class="formbody d-flex justify-content-center">
+			<form class="textlayout signupformwidth" action="#" name="myform" method="post">
+				<div class="text-center font-weight-bold  text-white">
+					<h2 class="text-center">Registration Here !!!</h2>
+				</div>
+				<div class="card bg-light text-dar">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="text-center font-weight-bold bg-info text-white">
+								<h3><label>Personal Details</label></h3>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="firstname">First Name
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="fname" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="middlename">Middle Name
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="mname" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="lastname">Last Name
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="lname" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="number1">Mobile Number
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="mobileno" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="number2">Alternate Mobile Number</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Optional">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="email">Email Address
+									<span class="startstyle">*</span>
+								</label>
+								<input type="email" class="form-control" name="email" id="email" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="password">Password
+									<span class="startstyle">*</span>
+								</label>
+								<input type="password" name="password" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="confirmpassword">Confirm Password
+									<span class="startstyle">*</span>
+								</label>
+								<input type="password" name="cpassword" class="form-control form-control-lg"placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div>
+								<label for="gender">Select your gender
+									<span class="startstyle">*</span>
+								</label><br>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" id="male" name="gender" value="0" required>Male
+									</label>
+								</div>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" id="female" name="gender" value="1">Female
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!--start checkbox-->
+							<div class="form-group">
+								<label for="check">Select language known
+									<span class="startstyle">*</span>
+								</label>
+								<br>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" value="">English
+									</label>
+								</div>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" value="">Hindi
+									</label>
+								</div>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" value="">Marathi
+									</label>
+								</div>
+							</div>
+							<!--end checkbox-->
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="comment">Type here your fulfill residential
+									address(eg.fergusson college campus)
+									<span class="startstyle">*</span>
+								</label>
+								<textarea class="form-control" rows="1" id="comment">
+								
+								</textarea>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<!--start dob calender-->
+							<div class="form-group">
+								<label for="dob">Enter your DOB
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="txtDate" class="form-control form-control-lg" placeholder="DD/MM/YYYY" id="txtDate">
+								<span class="error" id="lblError"></span>
+							</div>
+							<!--end dob calender-->
+						</div>
+						
+						<div class="col-lg-12">
+							<div class="text-center font-weight-bold bg-info text-white">
+								<h3><label>10th Details
+								</label></h3>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="school">Enter 10th school name
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="percentage">Enter 10th Percentage
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="select">10th Exam board
+									<span class="startstyle">*</span>
+								</label>
+								<select class="form-control" id="select">
+									<option value="">Select</option>
+									<option value="">Maharashtra State Board</option>
+									<option value="">CBSC</option>
+									<option value="">Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">If you have select 10th exam board other so write here your exam board name otherwise write NA (eg.maharashtra board)
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">Enter 10th year of passing
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="text-center font-weight-bold bg-info text-white">
+								<h3><label>12th Details</label></h3>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="college">Enter 12th college name</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="percentage2">Enter 12th Percentage</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">Enter 12th year of passing</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="select">12th Exam board</label>
+								<select class="form-control" id="select">
+									<option value="">Select</option>
+									<option value="">Maharashtra State Board</option>
+									<option value="">CBSC</option>
+									<option value="">Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">If you have select 12th exam board other so write here your exam board name otherwise write NA (eg.maharashtra board)
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="diploma">Enter diploma institute name</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="diplomapercentage">Enter diploma percentage</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">Enter diploma year of passing</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="text-center font-weight-bold bg-info text-white">
+								<h3><label>Graduation Details</label></h3>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="ug">Select UG Degree
+									<span class="startstyle">*</span>
+								</label>
+								<select class="form-control" id="ug">
+									<option value="">Select</option>
+									<option value="">BCS</option>
+									<option value="">BCA</option>
+									<option value="">B.Sc(Physics)</option>
+									<option value="">B.Sc(Math)</option>
+									<option value="">B.Sc(Chmistry)</option>
+									<option value="">B.Sc(Biology)</option>
+									<option value="">B.Sc(Electronics)</option>
+									<option value="">Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">
+									If you have select UG degree other so write here
+									your graduation branch name otherwise write NA
+									(eg.maharashtra board)<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="first">Enter first year Percentage
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="second">Enter second year Percentage
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="third">Enter third year Percentage
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">Enter UG year of passing
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="college">Enter UG college name
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="university">Enter UG university
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="text-center font-weight-bold bg-info text-white">
+								<h3><label>PG Details</label></h3>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="ug">Select PG Degree
+									<span class="startstyle">*</span>
+								</label>
+								<select class="form-control" id="ug">
+									<option value="">Select</option>
+									<option value="">MCA</option>
+									<option value="">MCS</option>
+									<option value="">IMCA</option>
+									<option value="">other</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="first">Enter first year Percentage
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="second">
+									Enter second year Percentage(recently)
+									
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">Enter PG year of passing
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="pg">Select PG college name
+									<span class="startstyle">*</span>
+								</label>
+								<select class="form-control" id="pg">
+									<option value="">Fergusson College Pune</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="pg">Select PG university
+									<span class="startstyle">*</span>
+								</label>
+								<select class="form-control" id="pg">
+									<option value="">Savitribai Phule University Pune
+									</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="select">
+									If you have year gap between 2 academic courses(eg.After 12th/Diploma or UG and PG)<span class="startstyle">*</span>
+								</label>
+								<select class="form-control" id="select">
+									<option value="">Select</option>
+									<option value="">Yes</option>
+									<option value="">No</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="yeargap">
+									If you have year gap, please specify (eg.1)
+								</label>
+								<input type="text" name="" class="form-control form-control-lg">
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="text-center font-weight-bold bg-info text-white">
+								<h3><label>Graduation Project Details</label></h3>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">Project Name
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">Project Technology (eg.Bootstrap,Django)
+									<span class="startstyle">*</span>
+								</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="comment">Type here your short project description
+									<span class="startstyle">*</span>
+								</label>
+								<textarea class="form-control" rows="1" id="comment">
+								
+								</textarea>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="text-center font-weight-bold bg-info text-white">
+								<h3><label>PG Project Details</label></h3>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">Project Name</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="year">Project Technology (eg.Bootstrap,Django)</label>
+								<input type="text" name="" class="form-control form-control-lg" placeholder="Your answer">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for="comment">Type here your short project description
+								</label>
+								<textarea class="form-control" rows="1" id="comment">
+								
+								</textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3">
+							
+						</div>
+						<div class="col-lg-3">
+							<div class="form-group">
+								<a href="login.html">
+									<button type="button" class="btn btn-primary btn-sm buttonback btn mt-3 btn-block rounded-pill text-uppercase tab">Back</button>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							
+						</div>
+						<div class="col-lg-3">
+							<div class="form-group">
+								<a href="#">
+									<button type="submit" class="btn btn-primary btn-sm buttonsubmit btn mt-3 btn-block rounded-pill text-uppercase tab" onclick="return validateForm()">Register</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

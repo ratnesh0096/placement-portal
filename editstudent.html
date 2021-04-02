@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		< <!--bootstrap4 offline css apply-->
+		<link rel="stylesheet" href="bootstrap css/bootstrap.min.css">
+		<!--bootstrap4 offline jquery js apply-->
+		<script type="text/javascript" src="bootstrap js/jquery.js" ></script>
+		<!--bootstrap4 offline js apply-->
+		<script type="text/javascript" src="bootstrap js/bootstrap.min.js"></script>
+		<!--user defined multilevel register form css-->
+		<link rel="stylesheet" href="multistep css/multistep.css">
+		<!--user defined multilevel register form js-->
+		<script type="text/javascript" src="multistep js/multistep.js" ></script>
+		<!--user defined css-->
+		<link rel="stylesheet" type="text/css" href="userdefined css/style.css">
+		<!--user defined js-->
+		<script type="text/javascript" src="userdefined js/event.js"></script>
+		<title>editstudent panel</title>
+	</head>
+	<body class="pagecolor">
+		<div>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg  navbar-light color fixed-top">
+					<a class="navbar-brand text-success" href="#">Train your skill</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="my">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-1">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Study Material
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li class="dropdown-submenu">
+										<a class="dropdown-item" href="arithmeticnotes.html">
+											Aptitude
+										</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="dropdown-item dropdown-toggle" href="#">
+											Programming
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="c notes.html">C</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="c++ notes.html">C++</a>
+											</li>
+											<li class="dropdown-submenu">
+												<a class="dropdown-item dropdown-toggle" href="#">Java</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a class="dropdown-item" href="corejava notes.html">
+															Core Java
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="advance java notes.html">
+															Advanced Java
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-item" href="python notes.html">
+													Python
+												</a>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Online Test</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="#">
+												Aptitude
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="arithmetic.html">
+														Arithmetic
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="data-interpretation.html">
+														Data Interpretation
+													</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="logical.html">
+														Logical
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-submenu">
+											<a class="dropdown-item dropdown-toggle" href="#">
+												Programming
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="c.html">C</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="c++.html">C++</a>
+												</li>
+												<li class="dropdown-submenu">
+													<a class="dropdown-item dropdown-toggle" href="#">Java</a>
+													<ul class="dropdown-menu">
+														<li>
+															<a class="dropdown-item" href="corejava.html">
+																Core Java
+															</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="advance java.html">
+																Advanced Java
+															</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a class="dropdown-item" href="python.html">Python</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown dmenu">
+									<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+										Student Corner
+									</a>
+									<div class="dropdown-menu sm-menu">
+										<a class="dropdown-item" href="#">Progess</a>
+										<a class="dropdown-item" href="#">Marks</a>
+										<a class="dropdown-item" href="#">Resum</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contactus.html">Contact us</a>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item dropdown dmenu">
+										<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+											Profile
+										</a>
+										<div class="dropdown-menu sm-menu">
+											<a class="dropdown-item" href="#">View</a>
+											<a class="dropdown-item" href="#">Edit</a>
+											<a class="dropdown-item" href="#">Logout</a>
+										</div>
+									</li>
+								</ul>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<!--start boby content-->
+				<div class="container-fluid notesstyle">
+					<div class="card" style="padding-top: 40px;">
+						<div class="card-header">
+							Personal Details
+						</div>
+						<div class="card-body">
+							<div class="row" style="margin-top: 5px;">
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="firstname">First name</label>
+										<input type="text" name="firstname" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="middlename">Middle name</label>
+										<input type="text" name="middlename" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="lastname">Last name</label>
+										<input type="text" name="lastname" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="number1">Mobile number</label>
+										<input type="number" name="mobileno" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="number2">Alternate mobile number</label>
+										<input type="number" name="alternetmobileno" class="form-control form-control-lg" placeholder="Optional">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="email">Email address</label>
+										<input type="text" class="form-control" name="email"  placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="password">Password</label>
+										<input type="password" name="password" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="confirmpassword">Confirm password</label>
+										<input type="password" name="confirmpassword" class="form-control form-control-lg"placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div>
+										<label for="gender">Select your gender</label><br>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="radio" class="form-check-input" id="male" name="gender" value="M" required>Male
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="radio" class="form-check-input" id="female" name="gender" value="F">Female
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<!--start checkbox-->
+									<div class="form-group">
+										<label for="check">Select language known</label>
+										<br>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" name="CBEnglish" class="form-check-input" value="English">English
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" name="CBHindi" class="form-check-input" value="Hindi">Hindi
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input type="checkbox" name="CBMarathi" class="form-check-input" value="Marathi">Marathi
+											</label>
+										</div>
+									</div>
+									<!--end checkbox-->
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="comment">Residential address(e.g.Fergusson college hostel)
+										</label>
+										<textarea class="form-control" rows="1" name ="address" id="comment">
+										
+										</textarea>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<!--start dob calender-->
+									<div class="form-group">
+										<label for="dob">Enter your date of birth</label>
+										<input type="date" name="birthdate" class="form-control form-control-lg" placeholder="DD/MM/YYYY" id="txtDate">
+										<span class="error" id="lblError"></span>
+									</div>
+									<!--end dob calender-->
+								</div>
+							</div>
+						</div>
+					</div><br>
+					<div class="card">
+						<div class="card-header">
+							10th Details
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="school">school name</label>
+										<input type="text" name="schoolname" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="percentage">10th Percentage</label>
+										<input type="number" name="tenthpercent" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="select">10th Exam board</label>
+										<select class="form-control" id="select" name="selecttenthboard">
+											<option selected="select" disabled>Select</option>
+											<option value="Maharashtra State Board">Maharashtra State Board</option>
+											<option value="CBSC">CBSC</option>
+											<option value="Other">Other</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">10th year of passing</label>
+										<input type="number" name="passyear" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">If you have selected exam board as "other" then type exam board name or type "NA" if board name is not avilable
+										</label>
+										<input type="text" name="tenthboard" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><br>
+					<div class="card">
+						<div class="card-header">
+							12th Details
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="college">12th college name</label>
+										<input type="text" name="twelvecollege" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="percentage2">12th Percentage</label>
+										<input type="number" name="twelvepercent" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">12th Year of passing</label>
+										<input type="number" name="twelvepassyear" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="select" >12th Exam board</label>
+										<select class="form-control" name="twelveexamboard" id="select">
+											<option selected="select" disabled>Select</option>
+											<option value="Maharashtra State Board">Maharashtra State Board</option>
+											<option value="CBSC">CBSC</option>
+											<option value="Other">Other</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">If you have selected 12th exam board as "other" then type exam board name otherwise type "NA"
+										</label>
+										<input type="text" name="twelveboard" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><br>
+					<div class="card">
+						<div class="card-header">
+							Diploma Details
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="diploma">Diploma institute name</label>
+										<input type="text" name="diplomainstitute" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="diplomapercentage">Diploma percentage</label>
+										<input type="number" name="diplomapercentage" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">Diploma year of passing</label>
+										<input type="number" name="diplomapassyear" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><br>
+					<div class="card">
+						<div class="card-header">
+							UG Details
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="ug">Select UG Degree</label>
+										<select class="form-control" name="selectugdegree" id="ug">
+											<option selected="select" disabled>Select</option>
+											<option value="BCS">BCS</option>
+											<option value="BCA">BCA</option>
+											<option value="B.Sc(Physics)">B.Sc(Physics)</option>
+											<option value="B.Sc(Math)">B.Sc(Math)</option>
+											<option value="B.Sc(Chmistry)">B.Sc(Chmistry)</option>
+											<option value="B.Sc(Biology)">B.Sc(Biology)</option>
+											<option value="B.Sc(Electronics)">B.Sc(Electronics)</option>
+											<option value="Other">Other</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">
+											If you have selected UG degree as "other" then type
+											UG degree name otherwise type "NA".
+										</label>
+										<input type="text" name="ugdegree" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="first">First year percentage</label>
+										<input type="number" name="fypercent" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="second">Second year percentage</label>
+										<input type="number" name="sypercent" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="third">Third year percentage</label>
+										<input type="number" name="typercent" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">UG year of passing</label>
+										<input type="number" name="ugpassyear" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="college">UG college name</label>
+										<input type="text" name="ugcollege" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="university">UG university</label>
+										<input type="text" name="uguniversity" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><br>
+					<div class="card">
+						<div class="card-header">
+							PG Details
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="ug">Select PG Degree</label>
+										<select class="form-control" name="pgdegree" id="ug">
+											<option selected="select" disabled>Select</option>
+											<option value="MCA">MCA</option>
+											<option value="MCS">MCS</option>
+											<option value="IMCA">IMCA</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="first">First year Percentage</label>
+										<input type="number" name="pgfypercent" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="second">
+											Second year Percentage
+										</label>
+										<input type="number" name="pgsypercent" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">PG year of passing</label>
+										<input type="number" name="pgpassyear" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="pg">Select PG college name</label>
+										<select class="form-control" name="pgcollegename" id="pg">
+											<option selected="Select" disabled>Select</option>
+											<option value="Fergusson College Pune">Fergusson College Pune</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="pg">Select PG university</label>
+										<select class="form-control" name="pguniversity" id="pg">
+											<option selected="select">Select</option>
+											<option value="Savitribai Phule University Pune">Savitribai Phule University Pune</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="select">
+											Do you have year gap?
+										</label>
+										<select class="form-control" name="isgap" id="select">
+											<option selected="select">Select</option>
+											<option value="Yes">Yes</option>
+											<option value="No">No</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="yeargap">
+											If you have year gap, please specify (e.g.1)
+										</label>
+										<input type="number" name="yeargap" class="form-control form-control-lg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><br>
+					<div class="card">
+						<div class="card-header">
+							UG Project Details
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">Project name</label>
+										<input type="text" name="ugproject" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">Project technology (e.g.Bootstrap)</label>
+										<input type="text" name="ugprojecttech" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="comment">Type here your short project description
+										</label>
+										<textarea class="form-control" name="ugprojectdesc" rows="1" id="comment">
+										
+										</textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><br>
+					<div class="card">
+						<div class="card-header">
+							PG Project Details
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">Project name</label>
+										<input type="text" name="pgproject" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="year">Project technology (e.g.Bootstrap)</label>
+										<input type="text" name="pgprojecttech" class="form-control form-control-lg" placeholder="Your answer">
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="comment">Type here your short project description
+										</label>
+										<textarea class="form-control" name="pgprojectdesc" rows="1" id="comment">
+										
+										</textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><br>
+					<div class="card">
+						<div class="card-header">
+							Add Extra Project Details
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<!--start dynamically textarea(js code write event.js file)-->
+								<div>
+									<label for="project">
+										As per requirement add textarea's and fillup the
+										project details<br>
+										(eg: entry one project like add two input box and one textarea first input box write project name and second input box write project technoloy's, inside textarea write project description another extra project  like same)
+									</label>
+									<select name='inputSelect' class="dropselect">
+										<option value ="text">Inputbox</option>
+										<option value ="textarea">Textarea</option>
+									</select>
+									<button type="button" value="Add" class="btn btn-primary btn-sm buttonsubmit btn mt-3 btn-block rounded-pill text-uppercase tab addbuttonstyle" onClick="addAllInputs('dynamicInputs', document.msform.inputSelect.value);">Add</button>
+								</div>
+								<!--stop dynamically create inputbox and textarea-->
+								<div id="dynamicInputs">
+								</div>
+								<!--end dynamically textarea-->
+							</div>
+						</div>
+						<div class="card-footer">
+							
+						</div>
+					</div>
+				</div>
+				<!--end boby content-->
+			</div>
+		</div>
+	</body>
+</html>
